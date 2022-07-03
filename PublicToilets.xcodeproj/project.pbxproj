@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3496C3B286DE8C000BCA940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C3A286DE8C000BCA940 /* AppDelegate.swift */; };
+		D3496C3D286DE8C000BCA940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C3C286DE8C000BCA940 /* SceneDelegate.swift */; };
+		D3496C44286DE8C200BCA940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3496C43286DE8C200BCA940 /* Assets.xcassets */; };
+		D3496C47286DE8C200BCA940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3496C45286DE8C200BCA940 /* LaunchScreen.storyboard */; };
+		D3496C52286DE8C200BCA940 /* PublicToiletsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C51286DE8C200BCA940 /* PublicToiletsTests.swift */; };
+		D3496C5C286DE8C200BCA940 /* PublicToiletsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C5B286DE8C200BCA940 /* PublicToiletsUITests.swift */; };
+		D3496C5E286DE8C200BCA940 /* PublicToiletsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C5D286DE8C200BCA940 /* PublicToiletsUITestsLaunchTests.swift */; };
+		D3496C6D286E7EF900BCA940 /* ToiletDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C6C286E7EF900BCA940 /* ToiletDto.swift */; };
+		D3496C6E286E7EF900BCA940 /* ToiletDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C6C286E7EF900BCA940 /* ToiletDto.swift */; };
+		D3496C71286F43B100BCA940 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C70286F43B100BCA940 /* Toilet.swift */; };
+		D3496C72286F43B100BCA940 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C70286F43B100BCA940 /* Toilet.swift */; };
+		D3496C75286F456200BCA940 /* ToiletMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C74286F456200BCA940 /* ToiletMapper.swift */; };
+		D3496C76286F456200BCA940 /* ToiletMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C74286F456200BCA940 /* ToiletMapper.swift */; };
+		D3496C79286FAFB600BCA940 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C78286FAFB600BCA940 /* Router.swift */; };
+		D3496C7A286FAFB600BCA940 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C78286FAFB600BCA940 /* Router.swift */; };
+		D3496C7C286FB13500BCA940 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C7B286FB13500BCA940 /* HttpClient.swift */; };
+		D3496C7D286FB13500BCA940 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C7B286FB13500BCA940 /* HttpClient.swift */; };
+		D3496C7F286FB1B100BCA940 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C7E286FB1B100BCA940 /* RequestError.swift */; };
+		D3496C80286FB1B100BCA940 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C7E286FB1B100BCA940 /* RequestError.swift */; };
+		D3496C8228706D9700BCA940 /* ToiletListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C8128706D9700BCA940 /* ToiletListDto.swift */; };
+		D3496C8328706D9700BCA940 /* ToiletListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C8128706D9700BCA940 /* ToiletListDto.swift */; };
+		D3496C85287070F600BCA940 /* ToiletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C84287070F600BCA940 /* ToiletService.swift */; };
+		D3496C86287070F600BCA940 /* ToiletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C84287070F600BCA940 /* ToiletService.swift */; };
+		D3496C8C2870748200BCA940 /* ToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C8B2870748200BCA940 /* ToiletListViewController.swift */; };
+		D3496C8D2870748200BCA940 /* ToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C8B2870748200BCA940 /* ToiletListViewController.swift */; };
+		D3496C8F28708C0000BCA940 /* ToiletList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3496C8E28708C0000BCA940 /* ToiletList.storyboard */; };
+		D3496C9028708C0000BCA940 /* ToiletList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3496C8E28708C0000BCA940 /* ToiletList.storyboard */; };
+		D3496C93287092A100BCA940 /* ToiletListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C92287092A000BCA940 /* ToiletListTableViewCell.swift */; };
+		D3496C94287092A100BCA940 /* ToiletListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C92287092A000BCA940 /* ToiletListTableViewCell.swift */; };
+		D3496C972870933A00BCA940 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C962870933A00BCA940 /* UITableViewExtension.swift */; };
+		D3496C982870933A00BCA940 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C962870933A00BCA940 /* UITableViewExtension.swift */; };
+		D3496C9A287099E800BCA940 /* ToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C99287099E800BCA940 /* ToiletViewModel.swift */; };
+		D3496C9B287099E800BCA940 /* ToiletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C99287099E800BCA940 /* ToiletViewModel.swift */; };
+		D3496C9E287224AF00BCA940 /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C9D287224AF00BCA940 /* GeolocationManager.swift */; };
+		D3496C9F287224AF00BCA940 /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496C9D287224AF00BCA940 /* GeolocationManager.swift */; };
+		D3496CA12872411800BCA940 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496CA02872411800BCA940 /* DoubleExtension.swift */; };
+		D3496CA22872411800BCA940 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3496CA02872411800BCA940 /* DoubleExtension.swift */; };
+		D381BF0628724C5B00FBAE50 /* ToiletDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D381BF0528724C5B00FBAE50 /* ToiletDetails.storyboard */; };
+		D381BF0828724C6500FBAE50 /* ToiletDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381BF0728724C6500FBAE50 /* ToiletDetailsViewController.swift */; };
+		D381BF0B28724DFE00FBAE50 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381BF0A28724DFE00FBAE50 /* Navigator.swift */; };
+		D381BF0D28724EB600FBAE50 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381BF0C28724EB600FBAE50 /* UIStoryboardExtension.swift */; };
+		D381BF0F28724F8900FBAE50 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D381BF0E28724F8900FBAE50 /* NSObjectExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3496C4E286DE8C200BCA940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3496C2F286DE8C000BCA940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3496C36286DE8C000BCA940;
+			remoteInfo = PublicToilets;
+		};
+		D3496C58286DE8C200BCA940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3496C2F286DE8C000BCA940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3496C36286DE8C000BCA940;
+			remoteInfo = PublicToilets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3496C37286DE8C000BCA940 /* PublicToilets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicToilets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3496C3A286DE8C000BCA940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3496C3C286DE8C000BCA940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3496C43286DE8C200BCA940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3496C46286DE8C200BCA940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3496C48286DE8C200BCA940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3496C4D286DE8C200BCA940 /* PublicToiletsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicToiletsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3496C51286DE8C200BCA940 /* PublicToiletsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicToiletsTests.swift; sourceTree = "<group>"; };
+		D3496C57286DE8C200BCA940 /* PublicToiletsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PublicToiletsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3496C5B286DE8C200BCA940 /* PublicToiletsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicToiletsUITests.swift; sourceTree = "<group>"; };
+		D3496C5D286DE8C200BCA940 /* PublicToiletsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicToiletsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3496C6C286E7EF900BCA940 /* ToiletDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDto.swift; sourceTree = "<group>"; };
+		D3496C70286F43B100BCA940 /* Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
+		D3496C74286F456200BCA940 /* ToiletMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletMapper.swift; sourceTree = "<group>"; };
+		D3496C78286FAFB600BCA940 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D3496C7B286FB13500BCA940 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		D3496C7E286FB1B100BCA940 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		D3496C8128706D9700BCA940 /* ToiletListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletListDto.swift; sourceTree = "<group>"; };
+		D3496C84287070F600BCA940 /* ToiletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletService.swift; sourceTree = "<group>"; };
+		D3496C8B2870748200BCA940 /* ToiletListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletListViewController.swift; sourceTree = "<group>"; };
+		D3496C8E28708C0000BCA940 /* ToiletList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToiletList.storyboard; sourceTree = "<group>"; };
+		D3496C92287092A000BCA940 /* ToiletListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletListTableViewCell.swift; sourceTree = "<group>"; };
+		D3496C962870933A00BCA940 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		D3496C99287099E800BCA940 /* ToiletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletViewModel.swift; sourceTree = "<group>"; };
+		D3496C9D287224AF00BCA940 /* GeolocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
+		D3496CA02872411800BCA940 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		D381BF0528724C5B00FBAE50 /* ToiletDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToiletDetails.storyboard; sourceTree = "<group>"; };
+		D381BF0728724C6500FBAE50 /* ToiletDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsViewController.swift; sourceTree = "<group>"; };
+		D381BF0A28724DFE00FBAE50 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D381BF0C28724EB600FBAE50 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		D381BF0E28724F8900FBAE50 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3496C34286DE8C000BCA940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C4A286DE8C200BCA940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C54286DE8C200BCA940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3496C2E286DE8C000BCA940 = {
+			isa = PBXGroup;
+			children = (
+				D3496C39286DE8C000BCA940 /* PublicToilets */,
+				D3496C50286DE8C200BCA940 /* PublicToiletsTests */,
+				D3496C5A286DE8C200BCA940 /* PublicToiletsUITests */,
+				D3496C38286DE8C000BCA940 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3496C38286DE8C000BCA940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C37286DE8C000BCA940 /* PublicToilets.app */,
+				D3496C4D286DE8C200BCA940 /* PublicToiletsTests.xctest */,
+				D3496C57286DE8C200BCA940 /* PublicToiletsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3496C39286DE8C000BCA940 /* PublicToilets */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C882870743600BCA940 /* app */,
+				D3496C872870742A00BCA940 /* data */,
+				D3496C892870744000BCA940 /* ui */,
+				D3496C952870931F00BCA940 /* extensions */,
+				D3496C43286DE8C200BCA940 /* Assets.xcassets */,
+				D3496C45286DE8C200BCA940 /* LaunchScreen.storyboard */,
+				D3496C48286DE8C200BCA940 /* Info.plist */,
+			);
+			path = PublicToilets;
+			sourceTree = "<group>";
+		};
+		D3496C50286DE8C200BCA940 /* PublicToiletsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C51286DE8C200BCA940 /* PublicToiletsTests.swift */,
+			);
+			path = PublicToiletsTests;
+			sourceTree = "<group>";
+		};
+		D3496C5A286DE8C200BCA940 /* PublicToiletsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C5B286DE8C200BCA940 /* PublicToiletsUITests.swift */,
+				D3496C5D286DE8C200BCA940 /* PublicToiletsUITestsLaunchTests.swift */,
+			);
+			path = PublicToiletsUITests;
+			sourceTree = "<group>";
+		};
+		D3496C6B286E7BDC00BCA940 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C6C286E7EF900BCA940 /* ToiletDto.swift */,
+				D3496C8128706D9700BCA940 /* ToiletListDto.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		D3496C6F286F43A200BCA940 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C70286F43B100BCA940 /* Toilet.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D3496C73286F455400BCA940 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C74286F456200BCA940 /* ToiletMapper.swift */,
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
+		D3496C77286FAFA700BCA940 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C73286F455400BCA940 /* mapper */,
+				D3496C6B286E7BDC00BCA940 /* dto */,
+				D3496C78286FAFB600BCA940 /* Router.swift */,
+				D3496C7B286FB13500BCA940 /* HttpClient.swift */,
+				D3496C7E286FB1B100BCA940 /* RequestError.swift */,
+				D3496C84287070F600BCA940 /* ToiletService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D3496C872870742A00BCA940 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C9C2872249D00BCA940 /* managers */,
+				D3496C6F286F43A200BCA940 /* model */,
+				D3496C77286FAFA700BCA940 /* API */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		D3496C882870743600BCA940 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C3A286DE8C000BCA940 /* AppDelegate.swift */,
+				D3496C3C286DE8C000BCA940 /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		D3496C892870744000BCA940 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				D381BF0928724DF300FBAE50 /* navigator */,
+				D3496CAA28724BBF00BCA940 /* toiletdetails */,
+				D3496C8A2870745D00BCA940 /* toiletlist */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		D3496C8A2870745D00BCA940 /* toiletlist */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C912870928700BCA940 /* cells */,
+				D3496C8E28708C0000BCA940 /* ToiletList.storyboard */,
+				D3496C8B2870748200BCA940 /* ToiletListViewController.swift */,
+				D3496C99287099E800BCA940 /* ToiletViewModel.swift */,
+			);
+			path = toiletlist;
+			sourceTree = "<group>";
+		};
+		D3496C912870928700BCA940 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C92287092A000BCA940 /* ToiletListTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D3496C952870931F00BCA940 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C962870933A00BCA940 /* UITableViewExtension.swift */,
+				D3496CA02872411800BCA940 /* DoubleExtension.swift */,
+				D381BF0C28724EB600FBAE50 /* UIStoryboardExtension.swift */,
+				D381BF0E28724F8900FBAE50 /* NSObjectExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		D3496C9C2872249D00BCA940 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				D3496C9D287224AF00BCA940 /* GeolocationManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		D3496CAA28724BBF00BCA940 /* toiletdetails */ = {
+			isa = PBXGroup;
+			children = (
+				D381BF0528724C5B00FBAE50 /* ToiletDetails.storyboard */,
+				D381BF0728724C6500FBAE50 /* ToiletDetailsViewController.swift */,
+			);
+			path = toiletdetails;
+			sourceTree = "<group>";
+		};
+		D381BF0928724DF300FBAE50 /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				D381BF0A28724DFE00FBAE50 /* Navigator.swift */,
+			);
+			path = navigator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3496C36286DE8C000BCA940 /* PublicToilets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3496C61286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToilets" */;
+			buildPhases = (
+				D3496C33286DE8C000BCA940 /* Sources */,
+				D3496C34286DE8C000BCA940 /* Frameworks */,
+				D3496C35286DE8C000BCA940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PublicToilets;
+			productName = PublicToilets;
+			productReference = D3496C37286DE8C000BCA940 /* PublicToilets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3496C4C286DE8C200BCA940 /* PublicToiletsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3496C64286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToiletsTests" */;
+			buildPhases = (
+				D3496C49286DE8C200BCA940 /* Sources */,
+				D3496C4A286DE8C200BCA940 /* Frameworks */,
+				D3496C4B286DE8C200BCA940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3496C4F286DE8C200BCA940 /* PBXTargetDependency */,
+			);
+			name = PublicToiletsTests;
+			productName = PublicToiletsTests;
+			productReference = D3496C4D286DE8C200BCA940 /* PublicToiletsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3496C56286DE8C200BCA940 /* PublicToiletsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3496C67286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToiletsUITests" */;
+			buildPhases = (
+				D3496C53286DE8C200BCA940 /* Sources */,
+				D3496C54286DE8C200BCA940 /* Frameworks */,
+				D3496C55286DE8C200BCA940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3496C59286DE8C200BCA940 /* PBXTargetDependency */,
+			);
+			name = PublicToiletsUITests;
+			productName = PublicToiletsUITests;
+			productReference = D3496C57286DE8C200BCA940 /* PublicToiletsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3496C2F286DE8C000BCA940 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D3496C36286DE8C000BCA940 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D3496C4C286DE8C200BCA940 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D3496C36286DE8C000BCA940;
+					};
+					D3496C56286DE8C200BCA940 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D3496C36286DE8C000BCA940;
+					};
+				};
+			};
+			buildConfigurationList = D3496C32286DE8C000BCA940 /* Build configuration list for PBXProject "PublicToilets" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3496C2E286DE8C000BCA940;
+			productRefGroup = D3496C38286DE8C000BCA940 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3496C36286DE8C000BCA940 /* PublicToilets */,
+				D3496C4C286DE8C200BCA940 /* PublicToiletsTests */,
+				D3496C56286DE8C200BCA940 /* PublicToiletsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3496C35286DE8C000BCA940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3496C47286DE8C200BCA940 /* LaunchScreen.storyboard in Resources */,
+				D3496C8F28708C0000BCA940 /* ToiletList.storyboard in Resources */,
+				D381BF0628724C5B00FBAE50 /* ToiletDetails.storyboard in Resources */,
+				D3496C44286DE8C200BCA940 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C4B286DE8C200BCA940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3496C9028708C0000BCA940 /* ToiletList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C55286DE8C200BCA940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3496C33286DE8C000BCA940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3496CA12872411800BCA940 /* DoubleExtension.swift in Sources */,
+				D3496C3B286DE8C000BCA940 /* AppDelegate.swift in Sources */,
+				D3496C9E287224AF00BCA940 /* GeolocationManager.swift in Sources */,
+				D3496C85287070F600BCA940 /* ToiletService.swift in Sources */,
+				D3496C9A287099E800BCA940 /* ToiletViewModel.swift in Sources */,
+				D3496C8228706D9700BCA940 /* ToiletListDto.swift in Sources */,
+				D381BF0D28724EB600FBAE50 /* UIStoryboardExtension.swift in Sources */,
+				D3496C7C286FB13500BCA940 /* HttpClient.swift in Sources */,
+				D3496C8C2870748200BCA940 /* ToiletListViewController.swift in Sources */,
+				D381BF0828724C6500FBAE50 /* ToiletDetailsViewController.swift in Sources */,
+				D3496C6D286E7EF900BCA940 /* ToiletDto.swift in Sources */,
+				D381BF0F28724F8900FBAE50 /* NSObjectExtension.swift in Sources */,
+				D3496C79286FAFB600BCA940 /* Router.swift in Sources */,
+				D381BF0B28724DFE00FBAE50 /* Navigator.swift in Sources */,
+				D3496C93287092A100BCA940 /* ToiletListTableViewCell.swift in Sources */,
+				D3496C75286F456200BCA940 /* ToiletMapper.swift in Sources */,
+				D3496C3D286DE8C000BCA940 /* SceneDelegate.swift in Sources */,
+				D3496C71286F43B100BCA940 /* Toilet.swift in Sources */,
+				D3496C7F286FB1B100BCA940 /* RequestError.swift in Sources */,
+				D3496C972870933A00BCA940 /* UITableViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C49286DE8C200BCA940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3496CA22872411800BCA940 /* DoubleExtension.swift in Sources */,
+				D3496C94287092A100BCA940 /* ToiletListTableViewCell.swift in Sources */,
+				D3496C80286FB1B100BCA940 /* RequestError.swift in Sources */,
+				D3496C6E286E7EF900BCA940 /* ToiletDto.swift in Sources */,
+				D3496C9B287099E800BCA940 /* ToiletViewModel.swift in Sources */,
+				D3496C982870933A00BCA940 /* UITableViewExtension.swift in Sources */,
+				D3496C86287070F600BCA940 /* ToiletService.swift in Sources */,
+				D3496C8328706D9700BCA940 /* ToiletListDto.swift in Sources */,
+				D3496C52286DE8C200BCA940 /* PublicToiletsTests.swift in Sources */,
+				D3496C9F287224AF00BCA940 /* GeolocationManager.swift in Sources */,
+				D3496C7A286FAFB600BCA940 /* Router.swift in Sources */,
+				D3496C72286F43B100BCA940 /* Toilet.swift in Sources */,
+				D3496C8D2870748200BCA940 /* ToiletListViewController.swift in Sources */,
+				D3496C7D286FB13500BCA940 /* HttpClient.swift in Sources */,
+				D3496C76286F456200BCA940 /* ToiletMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3496C53286DE8C200BCA940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3496C5E286DE8C200BCA940 /* PublicToiletsUITestsLaunchTests.swift in Sources */,
+				D3496C5C286DE8C200BCA940 /* PublicToiletsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3496C4F286DE8C200BCA940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3496C36286DE8C000BCA940 /* PublicToilets */;
+			targetProxy = D3496C4E286DE8C200BCA940 /* PBXContainerItemProxy */;
+		};
+		D3496C59286DE8C200BCA940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3496C36286DE8C000BCA940 /* PublicToilets */;
+			targetProxy = D3496C58286DE8C200BCA940 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3496C45286DE8C200BCA940 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3496C46286DE8C200BCA940 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3496C5F286DE8C200BCA940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3496C60286DE8C200BCA940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3496C62286DE8C200BCA940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PublicToilets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ToiletList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToilets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3496C63286DE8C200BCA940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PublicToilets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ToiletList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToilets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3496C65286DE8C200BCA940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToiletsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PublicToilets.app/PublicToilets";
+			};
+			name = Debug;
+		};
+		D3496C66286DE8C200BCA940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToiletsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PublicToilets.app/PublicToilets";
+			};
+			name = Release;
+		};
+		D3496C68286DE8C200BCA940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToiletsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PublicToilets;
+			};
+			name = Debug;
+		};
+		D3496C69286DE8C200BCA940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = REMYGYFCZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mappy.PublicToiletsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PublicToilets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3496C32286DE8C000BCA940 /* Build configuration list for PBXProject "PublicToilets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3496C5F286DE8C200BCA940 /* Debug */,
+				D3496C60286DE8C200BCA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3496C61286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToilets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3496C62286DE8C200BCA940 /* Debug */,
+				D3496C63286DE8C200BCA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3496C64286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToiletsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3496C65286DE8C200BCA940 /* Debug */,
+				D3496C66286DE8C200BCA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3496C67286DE8C200BCA940 /* Build configuration list for PBXNativeTarget "PublicToiletsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3496C68286DE8C200BCA940 /* Debug */,
+				D3496C69286DE8C200BCA940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3496C2F286DE8C000BCA940 /* Project object */;
+}

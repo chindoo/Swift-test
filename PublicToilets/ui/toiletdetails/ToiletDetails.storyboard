@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Toilet Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ToiletDetailsViewController" id="Y6W-OH-hqX" customClass="ToiletDetailsViewController" customModule="PublicToilets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-7p-LoR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="771"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-cw-U63">
+                                <rect key="frame" x="117.5" y="831" width="179" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ouvrir dans Apple Maps"/>
+                                <connections>
+                                    <action selector="openInAppleMapsButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TTT-T2-fEx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nOg-cw-U63" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4kS-Ev-7da"/>
+                            <constraint firstItem="6sh-7p-LoR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hWn-02-62k"/>
+                            <constraint firstItem="nOg-cw-U63" firstAttribute="top" secondItem="6sh-7p-LoR" secondAttribute="bottom" constant="16" id="klP-VU-hRq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nOg-cw-U63" secondAttribute="bottom" id="rNU-b3-o36"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6sh-7p-LoR" secondAttribute="trailing" id="sTQ-5D-8TS"/>
+                            <constraint firstItem="6sh-7p-LoR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tLa-DG-ob4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="6sh-7p-LoR" id="2e0-4P-CS3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="46.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
